@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+
+.playerContainer {
+  display: flex;
+  height: 100vh;
+  flex-wrap:  wrap;
+}
+
+.desktop {
+  flex-basis: calc(50% - 20px);
+  border:  1px solid black;
+  margin: 5px 5px;
+}
+  
+.desktop > * {
+  margin: 2%;
+  padding: 5%;
+}
+
+.desktop > button {
+  margin: 0;
+}
+
+.desktop > span {
+  font-size: 800%;
+  overflow: hidden;
+}
+
+.desktop button {
+  font-size: 400%;
+}
+
+.desktop > input {
+  width: 16%;
+  text-align: center;
+  justify-content: center;
+}
+
+.mobile {
+  flex-basis: calc(50% -20px);
+  box-sizing: border-box;
+  margin: 5px;
+  justify-content: center;
+}
+
+.mobile0 {
+  transform: rotate(90deg);
+}
+
+.mobile1 {
+  transform: rotate(270deg);
+}
+  
+.player1 {
+    background-color: red;
+    color: white;
+}
+
+.player2 {
+  background-color: purple;
+  color: white;
+}
+
+.player3 {
+  background-color: green;
+  color: white;
+}
+
+.cmder {
+  margin: 0px;
+  padding: 0px;
+  font-size: 400%;
+}
