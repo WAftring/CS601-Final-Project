@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { isMobile } from "react-device-detect";
 
-let PLAYER_COUNTER = 0;
 class Player extends React.Component {
     constructor(props) {
         super(props)
@@ -17,7 +16,6 @@ class Player extends React.Component {
             commander_damage: [0, 0, 0],
             class: className
         };
-        PLAYER_COUNTER++;
     }
     incrementLife = (amount) => {
         let i = parseInt(amount);

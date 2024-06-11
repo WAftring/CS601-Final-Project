@@ -41,7 +41,7 @@ class View extends React.Component {
     render() {
         return (
             <div>
-                {this.state.players.length == 0 ? (
+                {this.state.players.length === 0 ? (
                     <div>
                         <label htmlFor="playerCount">Players: </label><input id="playerCount" type="number" min="2" value={this.state.new_player_counter} onChange={this.updateNewPlayerCount}/><br/>
                         <label htmlFor="life">Life: </label><input id="life" type="number" min="1" value={this.state.starting_life} onChange={this.updateStartingLife}/><br/>
