@@ -7,7 +7,7 @@ class Player extends React.Component {
         console.trace("Constructing player")
         let className = `desktop player${props.count}`;
         if(isMobile) {
-            className = `mobile mobile${props.count % 2} player${props.count}`
+            className = `mobile`
         }
         this.state = {
             life: props.life,
@@ -36,16 +36,20 @@ class Player extends React.Component {
     render() {
         return (
             <div className={this.state.class}>
+                <div>
                 <button onClick={() => this.decrementLife("5")}>-5</button>
                 <button onClick={() => this.decrementLife("1")}>-</button>
                 <span>{String(this.state.life).padStart(2, 0)}</span>
                 <button onClick={() => this.incrementLife("1")}>+</button>
-                <button onClick={() => this.incrementLife("5")}>+5</button><br/>
+                <button onClick={() => this.incrementLife("5")}>+5</button>
+                </div>
+                <div>
                 <label className="cmder">Cmder:</label>
                 {this.state.commander_damage.map((number, index) => (
                     <input onChange={(event) => this.updateCmdDmg(event, index)} className="cmder" type="number" min="0" max="21" value={number}></input>
                 ))}
                 <label className="cmder">P:</label><input className="cmder" type="number" min="0" max="10" value={this.state.poison_dmg} onChange={this.updatePoison}></input>
+                </div>
             </div>
         )
     }
