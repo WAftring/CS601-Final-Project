@@ -13,7 +13,9 @@ function App() {
       {!isMobile ? (
         <View/>
       ) : (
-        <Player life="40"/>
+        <div className='mobile'>
+          This site has no support for mobile devices.
+        </div>
       )}
     </div>
   );

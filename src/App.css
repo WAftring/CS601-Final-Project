@@ -1,3 +1,8 @@
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
 
 .playerContainer {
   display: flex;
@@ -10,54 +15,39 @@
   border:  1px solid black;
   margin: 5px 5px;
 }
-  
-.desktop  * {
-  margin: 2%;
-  padding: 5%;
-}
 
-.desktop  button {
+.desktop button {
   margin: 0;
 }
 
-.desktop  span {
-  font-size: 800%;
-  overflow: hidden;
+.desktop button {
+  font-size: 200%;
 }
 
-.desktop button {
-  font-size: 400%;
+.mobile {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
+
 
 .desktop input {
   width: 16%;
   text-align: center;
   justify-content: center;
 }
-
-.mobile {
-  transform: rotate(90deg);
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh;
   
-}
-.mobile > * {
-  margin: 2%;
-  padding: 5%;
-}
-
-.mobile button {
-  font-size: x-large;
-  padding: 20px;
-
-}
-
-.mobile span {
+.bigText {
   font-size: 400%;
+  margin: 0px;
+  padding: 0px;
 }
-  
+
+.medText {
+  font-size: 200%;
+}
+
 .player0 {
     background-color: blue;
     color: white;
@@ -87,4 +77,69 @@
   margin: 0px;
   padding: 0px;
   font-size: 200%;
+}
+
+.configurationContainer {
+  display: flex;
+}
+
+.configurationContainer div {
+  flex: 1;
+  padding: 10px;
+}
+
+.lifeCounter {
+  margin: 0px;
+  padding: 0px;
+}
+
+.lifeCounter li {
+  padding: 0px;
+  margin: 0px;
+}
+
+* li {
+  list-style: none;
+}
+
+
+.row1 {
+  display: flex;
+}
+
+.row1 > div {
+  flex: 1;
+}
+
+
+.row3 {
+  display: flex;
+}
+
+.row3 > div {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.newgame label{
+  font-size: 200%;
+}
+
+.newgame input {
+  font-size: 200%;
+}
+
+.newgame button {
+  font-size: 400%;
+}
+
+.nohelp {
+  margin: 0px;
+  padding: 0px;
+}
+
+.playerLife > * {
+  padding: 10px;
+  margin: 5px;
 }
