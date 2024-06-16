@@ -1,5 +1,4 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
 
 class Player extends React.Component {
     constructor(props) {
@@ -12,7 +11,7 @@ class Player extends React.Component {
         
         let counters = [];
         for(let i = 0; i < this.props.playerCount; i++) {
-            if(i != this.props.count) {
+            if(i !== this.props.count) {
                 counters.push(<CommanderCounter id={i}/>)
             }   
         }
